@@ -360,19 +360,12 @@
 </nav>
 
 <!-- ── HERO + ABOUT ── -->
-<section id="hero" style="display:grid; grid-template-columns:1fr 1fr; min-height:calc(100vh - 58px); padding:0;">
-  <span id="about"></span>
+<section id="hero" style="display:grid; grid-template-columns:1fr 1fr; min-height:calc(100vh - 58px); padding:0; position:relative;">
+  <span id="about" style="position:absolute;"></span>
   <div class="hero-watermark">Heidi's Works</div>
 
-  <!-- Left: photo centered -->
-  <div style="border-right:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
-    <div class="about-photo" style="width:220px; height:220px;">
-      <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
-    </div>
-  </div>
-
-  <!-- Right: text content -->
-  <div style="padding:80px 56px; display:flex; flex-direction:column; justify-content:flex-start;">
+  <!-- Left: text content -->
+  <div style="padding:80px 56px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:flex-start;">
     <h1 class="hero-title">
       I tried to be a joyful feminist,<br><em>but I was very angry.</em>
     </h1>
@@ -393,6 +386,13 @@
     <div class="hero-ctas">
       <a class="btn btn-fill" href="#documentary">View Works</a>
       <a class="btn btn-outline" href="mailto:heidi0233@gmail.com">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- Right: photo centered -->
+  <div style="display:flex; align-items:center; justify-content:center;">
+    <div class="about-photo" style="width:220px; height:220px;">
+      <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
     </div>
   </div>
 </section>
