@@ -359,26 +359,57 @@
   </ul>
 </nav>
 
-<!-- ── HERO ── -->
-<section id="hero">
+<!-- ── HERO + ABOUT ── -->
+<section id="hero" style="display:grid; grid-template-columns:1fr 1fr; min-height:calc(100vh - 58px); padding:0;">
+  <span id="about"></span>
   <div class="hero-watermark">Heidi's Works</div>
-  <div class="hero-eyebrow">Writer-Director · Producer · Visual Journalist</div>
-  <h1 class="hero-title">
-    I tried to be a joyful feminist,<br><em>but I was very angry.</em>
-  </h1>
-  <div style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--dim); margin-bottom:12px;">— Agnes Varda</div>
-  <div style="display:flex; align-items:flex-start; gap:20px;">
-    <p class="hero-bio" style="margin:0; flex:1;">
-      Based in Taiwan. 10+ years of experience in documentary storytelling, branded content, and social-issue filmmaking across fashion, culture, gender, human rights &amp; environment.<br>
-      <span style="color:rgba(240,235,226,0.3);">台灣影音創作者，專注紀錄片、品牌影片及社會議題報導。</span>
-    </p>
-    <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; flex-shrink:0;">
-      <img src="heidi-photo.jpg" alt="Heidi" style="width:100%; height:100%; object-fit:cover;" />
+
+  <!-- Left: photo + name -->
+  <div style="padding:80px 56px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:flex-end;">
+    <div class="about-photo" style="width:200px; height:200px; margin-bottom:28px;">
+      <img src="heidi-photo.jpg" alt="Heidi"
+           onerror="this.style.display='none';" />
     </div>
+    <div class="about-name">Heidi Chen</div>
+    <div class="about-title-line" style="margin-bottom:48px;">Writer-Director, Producer &amp; Visual Journalist</div>
+
+    <div class="exp-label">過往合作品牌</div>
+    <p style="font-size:13px; color:rgba(240,235,226,0.4); line-height:2.2;">
+      Kering · Gucci · Chanel · Omega · IWC · Tommy Hilfiger · Eva Air · Greenpeace
+    </p>
   </div>
-  <div class="hero-ctas">
-    <a class="btn btn-fill" href="#documentary">View Works</a>
-    <a class="btn btn-outline" href="#contact">Get in Touch</a>
+
+  <!-- Right: quote + bio + expertise -->
+  <div style="padding:80px 56px; display:flex; flex-direction:column; justify-content:flex-end;">
+    <div class="hero-eyebrow">Writer-Director · Producer · Visual Journalist</div>
+    <h1 class="hero-title">
+      I tried to be a joyful feminist,<br><em>but I was very angry.</em>
+    </h1>
+    <div style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--dim); margin-bottom:32px;">— Agnes Varda</div>
+
+    <p class="about-en">
+      Based in Taiwan, I am a filmmaker and content creator specializing in documentary storytelling and high-quality visual production. With over a decade of experience, I focus on the intersection of fashion, culture, gender issues, and human rights — crafting narratives that are both aesthetically refined and socially engaged.
+    </p>
+    <p class="about-zh">
+      我是Heidi，擁有十多年影音創作經驗，擅長從企劃、腳本、拍攝到後製的全流程製作，作品橫跨紀錄片、品牌影片、議題報導、MV與Podcast，風格融合深度報導與美學敘事。
+    </p>
+
+    <div class="exp-label">Expertise · 專業</div>
+    <div style="margin-bottom:40px;">
+      <div class="exp-item"><span class="exp-zh">企劃與腳本</span><span class="exp-en">Concept &amp; Scripting</span></div>
+      <div class="exp-item"><span class="exp-zh">紀錄片導演</span><span class="exp-en">Documentary Direction</span></div>
+      <div class="exp-item"><span class="exp-zh">品牌影片製作</span><span class="exp-en">Branded Content</span></div>
+      <div class="exp-item"><span class="exp-zh">社會議題報導</span><span class="exp-en">Issue Journalism</span></div>
+      <div class="exp-item"><span class="exp-zh">MV 導演</span><span class="exp-en">Music Video Direction</span></div>
+      <div class="exp-item"><span class="exp-zh">訪談節目製作</span><span class="exp-en">Interview Program</span></div>
+      <div class="exp-item"><span class="exp-zh">影片後製監製</span><span class="exp-en">Post-Production</span></div>
+      <div class="exp-item"><span class="exp-zh">Podcast 製作</span><span class="exp-en">Podcast Production</span></div>
+    </div>
+
+    <div class="hero-ctas">
+      <a class="btn btn-fill" href="#documentary">View Works</a>
+      <a class="btn btn-outline" href="mailto:heidi0233@gmail.com">Get in Touch</a>
+    </div>
   </div>
 </section>
 
@@ -777,61 +808,6 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════ -->
-<!-- ABOUT                          -->
-<!-- ══════════════════════════════ -->
-<section id="about" class="sec">
-  <div class="about-left">
-    <!-- Photo here only -->
-    <div class="about-photo">
-      <img src="heidi-photo.jpg" alt="Heidi"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-      <div class="about-photo-placeholder" style="display:none;">
-        <p>→ Save photo as<br>heidi-photo.jpg</p>
-      </div>
-    </div>
-    <div class="about-name">Heidi Chen</div>
-    <div class="about-title-line">Writer-Director, Producer & Visual Journalist</div>
-  </div>
-
-  <div class="about-right">
-    <div class="sec-eyebrow" style="margin-bottom:20px;">About · 關於</div>
-    <h2 class="about-heading">
-      10+ Years of<br><em>Visual Storytelling</em>
-    </h2>
-    <p class="about-en">
-      Based in Taiwan, I am a filmmaker and content creator specializing in documentary storytelling and high-quality visual production. With over a decade of experience, I focus on the intersection of fashion, culture, gender issues, and human rights — crafting narratives that are both aesthetically refined and socially engaged.
-      <br><br>
-      My expertise ranges from concept development to final post-production, delivering cinematic content for both traditional broadcast and digital platforms. Previous clients include Kering, Gucci, Chanel, Omega, IWC, Tommy Hilfiger, and Eva Air.
-    </p>
-    <p class="about-zh">
-      我是Heidi，擁有十多年影音創作經驗，擅長從企劃、腳本、拍攝到後製的全流程製作，作品橫跨紀錄片、品牌影片、議題報導、MV與Podcast，風格融合深度報導與美學敘事。
-    </p>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:48px;">
-      <a class="btn btn-fill" href="mailto:heidi0233@gmail.com">Contact Me</a>
-    </div>
-
-    <div class="exp-label">Expertise · 專業</div>
-    <div>
-      <div class="exp-item"><span class="exp-zh">企劃與腳本</span><span class="exp-en">Concept &amp; Scripting</span></div>
-      <div class="exp-item"><span class="exp-zh">紀錄片導演</span><span class="exp-en">Documentary Direction</span></div>
-      <div class="exp-item"><span class="exp-zh">品牌影片製作</span><span class="exp-en">Branded Content</span></div>
-      <div class="exp-item"><span class="exp-zh">社會議題報導</span><span class="exp-en">Issue Journalism</span></div>
-      <div class="exp-item"><span class="exp-zh">MV 導演</span><span class="exp-en">Music Video Direction</span></div>
-      <div class="exp-item"><span class="exp-zh">訪談節目製作</span><span class="exp-en">Interview Program</span></div>
-      <div class="exp-item"><span class="exp-zh">影片後製監製</span><span class="exp-en">Post-Production</span></div>
-      <div class="exp-item"><span class="exp-zh">Podcast 製作</span><span class="exp-en">Podcast Production</span></div>
-    </div>
-
-    <!-- Clients -->
-    <div style="margin-top:40px;">
-      <div class="exp-label">過往合作品牌</div>
-      <p style="font-size:14px; color:rgba(240,235,226,0.4); line-height:2;">
-        Kering · Gucci · Chanel · Omega · IWC · Tommy Hilfiger · Eva Air · Greenpeace
-      </p>
-    </div>
-  </div>
-</section>
 
 <!-- ── CONTACT ── -->
 <section id="contact">
