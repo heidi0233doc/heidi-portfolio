@@ -362,12 +362,12 @@
 </nav>
 
 <!-- ── HERO + ABOUT ── -->
-<section id="hero" style="position:relative; overflow:hidden;">
+<section id="hero" style="position:relative; display:flex;">
   <span id="about" style="position:absolute; top:0;"></span>
   <div class="hero-watermark">Heidi's Works</div>
 
-  <!-- Left half: text -->
-  <div class="hero-left" style="position:absolute; left:0; top:0; width:50%; height:100%; padding:80px 56px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:flex-start; border-right:1px solid var(--border); overflow-y:auto;">
+  <!-- Left half: text — sets section height -->
+  <div class="hero-left" style="width:50%; padding:80px 56px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:flex-start; border-right:1px solid var(--border);">
     <h1 class="hero-title">
       writer-director / producer /<em>creator</em>
     </h1>
@@ -390,8 +390,8 @@
     </div>
   </div>
 
-  <!-- Right half: photo vertically centered with space above and below -->
-  <div class="hero-right" style="position:absolute; right:0; top:0; width:50%; height:100%; display:flex; align-items:center; justify-content:center;">
+  <!-- Right half: photo vertically centered -->
+  <div class="hero-right" style="width:50%; display:flex; align-items:center; justify-content:center;">
     <div class="about-photo" style="width:220px; height:220px; margin-bottom:0;">
       <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
     </div>
