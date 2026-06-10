@@ -388,9 +388,12 @@
     </div>
   </div>
 
-  <!-- Right: photo centered -->
-  <div style="flex:1; display:flex; align-items:center; justify-content:center;">
-    <div class="about-photo" style="width:220px; height:220px;">
+  <!-- Right: spacer -->
+  <div style="flex:1;"></div>
+
+  <!-- Photo: absolutely positioned at center of right half -->
+  <div style="position:absolute; right:25%; top:50%; transform:translate(50%,-50%);">
+    <div class="about-photo" style="width:220px; height:220px; margin-bottom:0;">
       <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
     </div>
   </div>
