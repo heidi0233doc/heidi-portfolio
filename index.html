@@ -364,8 +364,15 @@
   <span id="about"></span>
   <div class="hero-watermark">Heidi's Works</div>
 
-  <!-- Left: text content -->
-  <div style="padding:80px 56px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:flex-start;">
+  <!-- Left: photo centered -->
+  <div style="border-right:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+    <div class="about-photo" style="width:220px; height:220px;">
+      <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
+    </div>
+  </div>
+
+  <!-- Right: text content -->
+  <div style="padding:80px 56px; display:flex; flex-direction:column; justify-content:flex-start;">
     <h1 class="hero-title">
       I tried to be a joyful feminist,<br><em>but I was very angry.</em>
     </h1>
@@ -374,16 +381,11 @@
     <p class="about-en">
       Based in Taiwan, I am a filmmaker and content creator specializing in documentary storytelling and high-quality visual production. With over a decade of experience, I focus on the intersection of fashion, culture, gender issues, and human rights — crafting narratives that are both aesthetically refined and socially engaged.
     </p>
-    <div style="display:flex; align-items:flex-start; gap:24px; margin-bottom:0;">
-      <div class="about-photo" style="width:100px; height:100px; flex-shrink:0; margin-bottom:0;">
-        <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
-      </div>
-      <p class="about-zh" style="margin:0;">
-        我是Heidi，擁有十多年影音創作經驗，擅長從企劃、腳本、拍攝到後製的全流程製作，作品橫跨紀錄片、品牌影片、議題報導、MV與Podcast，風格融合深度報導與美學敘事。
-      </p>
-    </div>
+    <p class="about-zh">
+      我是Heidi，擁有十多年影音創作經驗，擅長從企劃、腳本、拍攝到後製的全流程製作，作品橫跨紀錄片、品牌影片、議題報導、MV與Podcast，風格融合深度報導與美學敘事。
+    </p>
 
-    <div class="exp-label" style="margin-top:32px;">過往合作品牌</div>
+    <div class="exp-label">過往合作品牌</div>
     <p style="font-size:13px; color:rgba(240,235,226,0.4); line-height:2.2; margin-bottom:40px;">
       Kering · Gucci · Chanel · Omega · IWC · Tommy Hilfiger · Eva Air · Greenpeace
     </p>
@@ -393,9 +395,6 @@
       <a class="btn btn-outline" href="mailto:heidi0233@gmail.com">Contact Me</a>
     </div>
   </div>
-
-  <!-- Right: empty -->
-  <div></div>
 </section>
 
 <!-- ══════════════════════════════ -->
