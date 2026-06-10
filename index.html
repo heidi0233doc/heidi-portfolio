@@ -360,12 +360,12 @@
 </nav>
 
 <!-- ── HERO + ABOUT ── -->
-<section id="hero" style="display:flex; height:calc(100vh - 58px); padding:0; position:relative;">
-  <span id="about" style="position:absolute;"></span>
+<section id="hero" style="position:relative; height:calc(100vh - 58px); overflow:hidden;">
+  <span id="about" style="position:absolute; top:0;"></span>
   <div class="hero-watermark">Heidi's Works</div>
 
-  <!-- Left: text content -->
-  <div style="flex:1; padding:80px 56px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:flex-start; overflow-y:auto;">
+  <!-- Left half: text -->
+  <div style="position:absolute; left:0; top:0; width:50%; height:100%; padding:80px 56px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:flex-start; border-right:1px solid var(--border); overflow-y:auto;">
     <h1 class="hero-title">
       writer-director / producer /<em>creator</em>
     </h1>
@@ -388,11 +388,8 @@
     </div>
   </div>
 
-  <!-- Right: spacer -->
-  <div style="flex:1;"></div>
-
-  <!-- Photo: absolutely positioned at center of right half -->
-  <div style="position:absolute; right:25%; top:50%; transform:translate(50%,-50%);">
+  <!-- Right half: photo vertically centered with space above and below -->
+  <div style="position:absolute; right:0; top:0; width:50%; height:100%; display:flex; align-items:center; justify-content:center;">
     <div class="about-photo" style="width:220px; height:220px; margin-bottom:0;">
       <img src="heidi-photo.jpg" alt="Heidi" onerror="this.style.display='none';" />
     </div>
